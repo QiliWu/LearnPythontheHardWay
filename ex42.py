@@ -9,7 +9,7 @@ class Dog(Animal):
         # from self get the name attribute and set it to name.
         self.name = name
 
-# class Cat has a __init__ that takses self and name parameters
+# class Cat has a __init__ that takes self and name parameters
 class Cat(Animal):
 
     def __init__(self,name):

@@ -9,7 +9,7 @@ print ("If you do want that, hit RETURN")
 input("?")
 
 print("Opening the file...")
-target = open(filename,'w')
+target = open(filename,'w')  #open file in the write model
 
 print ("Now I'm going to ask you for three lines.")
 
@@ -19,7 +19,7 @@ line3 = input("line 3: ")
 
 print ("I'm doing to write these to the file.")
 
-target.write(line1)
+target.write(line1)     #write this into the file
 target.write("\n")
 target.write(line2)
 target.write("\n")
@@ -27,4 +27,4 @@ target.write(line3)
 target.write("\n")
 
 print ("And finally, we close it.")
-target.close()
+target.close()    #need to close the file after writing

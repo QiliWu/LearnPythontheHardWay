@@ -21,7 +21,7 @@ PHRASES = {
         "From *** get the *** attribute and set it to '***'."
 }
 
-#do they want to drill pharases first
+#do they want to drill phrases first
 PHRASE_FIRST = False
 if len(sys.argv) == 2 and sys.argv[1] == "english":
     PHRASE_FIRST = True
@@ -69,8 +69,8 @@ try:
         random.shuffle(snippets)
 
         for snippet in snippets:
-            pharse = PHRASES[snippet]
-            question, answer = convert(snippet,pharse)
+            phrase = PHRASES[snippet]
+            question, answer = convert(snippet,phrase)
             if PHRASE_FIRST:
                 question, answer = answer, question
 

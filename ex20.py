@@ -7,7 +7,7 @@ def print_all(f):
     print (f.read())
 
 def rewind(f):
-    #the first line left shift 2 offsets
+    #the first line right shift 2 offsets
     f.seek(2)
 
 def print_a_line(line_count, f):

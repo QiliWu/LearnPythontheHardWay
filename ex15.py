@@ -2,7 +2,7 @@ from sys import argv
 
 script, filename = argv
 
-txt = open(filename)
+txt = open(filename)  #open a file
 
 print("Here's your file %r:" % filename)
 print(txt.read())

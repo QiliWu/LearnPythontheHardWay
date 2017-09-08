@@ -93,12 +93,12 @@ class LaserWeaponArmory(Scene):
         guess = raw_input("[keypad]> ")
         guesses = 0
 
-        while guess != code and guesses < 10:
+        while guess != code and int(guess) % 111 !=0 and guesses < 10:
             print "BZZZZEDDD!"
             guesses += 1
             guess = raw_input("[keypad]> ")
 
-        if guess == code:
+        if guess == code or int(guess) %111==0:
             print "The container clicks open and the seal breaks, letting gas out."
             print "You grab the neutron bonb and run as fast as you can to the"
             print "bridge where you must place it in the right spot."
@@ -140,7 +140,7 @@ class TheBridge(Scene):
             print "You then jump back through the door, punch the close button"
             print "and blast the lock so the Gothons can't get out."
             print "Now that the bomb is placed you run to the escape pod to"
-            print "get off this thin can."
+            print "get off this tin can."
             return "escape_pod"
         else:
             print "DOES NOT COMPUTE!"
